@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/sovet.min.css" />
+    <!-- title -->
+    <title>Project</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="logo">
+            <img src="assets/ico/logo.svg" alt="logo" />
+
+            <p class="logo__text">
+              IT-совет по цифровому<br />
+              развитию Республики Ингушетия
+            </p>
+          </a>
+
+          <nav class="header-nav">
+            <ul class="header-menu">
+              <li class="header-menu__item">
+                <a href="index.html" class="header-menu__link">Главная</a>
+              </li>
+
+              <li class="header-menu__item">
+                <a href="mero.html" class="header-menu__link">Мероприятия</a>
+              </li>
+
+              <li class="header-menu__item">
+                <a href="sovet.html" class="header-menu__link">Совет</a>
+              </li>
+
+              <li class="header-menu__item">
+                <a href="contact.html" class="header-menu__link">Контакты</a>
+              </li>
+            </ul>
+
+            <button href="#!" class="header-nav__btn">
+              <img src="assets/ico/login.svg" alt="login" />
+            </button>
+
+            <!-- Login -->
+            <div class="login" id="login-form">
+              <h3 class="login-title">Создать личный аккаунт</h3>
+              <form class="login-form">
+                <fieldset class="login-wrapper__input">
+                  <input
+                    required
+                    type="text"
+                    placeholder="Имя"
+                    class="login-input"
+                    id="name"
+                  />
+                  <input
+                    required
+                    type="text"
+                    placeholder="Фамилия"
+                    class="login-input"
+                    id="surname"
+                  />
+                  <input
+                    required
+                    type="tel"
+                    placeholder="Номер телефона"
+                    class="login-input"
+                    id="telephon"
+                  />
+                </fieldset>
+
+                <textarea
+                  required
+                  placeholder="Ваше сообщение"
+                  class="login__text"
+                ></textarea>
+
+                <button class="login__btn" type="submit">
+                  Зарегестрироваться
+                </button>
+              </form>
+            </div>
+
+            <div class="shadow"></div>
+          </nav>
+          <!-- ./wrapper -->
+        </div>
+        <!-- ./container -->
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <div class="container">
+        <div class="sovet">
+          <div class="sovet-block">
+            <div class="sovet__wrapper">
+              <div class="sovet-img">
+                <img src="assets/images/1.jpg" alt="Человек" />
+              </div>
+              <div class="sovet-content">
+                <p>Хакатон</p>
+                <a href="#!" class="black-btn">Читать дальше</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sovet-block">
+            <div class="sovet__wrapper">
+              <div class="sovet-img">
+                <img src="assets/images/1.jpg" alt="Человек" />
+              </div>
+              <div class="sovet-content">
+                <p>Хакатон</p>
+                <a href="#!" class="black-btn">Читать дальше</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sovet-block">
+            <div class="sovet__wrapper">
+              <div class="sovet-img">
+                <img src="assets/images/1.jpg" alt="Человек" />
+              </div>
+              <div class="sovet-content">
+                <p>Хакатон</p>
+                <a href="#!" class="black-btn">Читать дальше</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sovet-block">
+            <div class="sovet__wrapper">
+              <div class="sovet-img">
+                <img src="assets/images/1.jpg" alt="Человек" />
+              </div>
+              <div class="sovet-content">
+                <p>Хакатон</p>
+                <a href="#!" class="black-btn">Читать дальше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">
+          © Общественный совет по цифровому развитию республики Ингушетия
+        </p>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="src/js/news.js"></script>
+  </body>
+</html>

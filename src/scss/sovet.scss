@@ -1,0 +1,13 @@
+// Base
+@import "base/reset";
+@import "base/vars";
+@import "base/base";
+
+// Blocks
+@import "blocks/header";
+@import "blocks/login";
+@import "blocks/sovet-main";
+@import "blocks/footer.scss";
+
+// Bam
+@import "base/bam-style";

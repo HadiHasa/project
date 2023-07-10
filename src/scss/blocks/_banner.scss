@@ -1,0 +1,17 @@
+.banner-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content__btn {
+  padding: 10px 16px;
+
+  color: $white;
+
+  background-color: $black;
+}

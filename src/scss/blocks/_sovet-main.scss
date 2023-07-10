@@ -1,0 +1,42 @@
+.sovet {
+  margin: 20px 0;
+}
+
+.sovet-block {
+  padding: 20px;
+
+  border: 2px solid $accent-grey;
+}
+
+.sovet__wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sovet-img {
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.sovet-content {
+  display: block;
+}
+
+.sovet {
+  display: grid;
+  grid-template-columns: repeat(2, 660px);
+
+  gap: 20px;
+}
+
+.black-btn {
+  padding: 20px;
+
+  color: $white;
+
+  background-color: $black;
+}

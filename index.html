@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/main.min.css" />
+    <!-- title -->
+    <title>Project</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="logo">
+            <img src="assets/ico/logo.svg" alt="logo" />
+
+            <p class="logo__text">
+              IT-совет по цифровому<br />
+              развитию Республики Ингушетия
+            </p>
+          </a>
+
+          <nav class="header-nav">
+            <ul class="header-menu">
+              <li class="header-menu__item">
+                <a href="index.html" class="header-menu__link">Главная</a>
+              </li>
+
+              <li class="header-menu__item">
+                <a href="mero.html" class="header-menu__link">Мероприятия</a>
+              </li>
+
+              <li class="header-menu__item">
+                <a href="sovet.html" class="header-menu__link">Совет</a>
+              </li>
+
+              <li class="header-menu__item">
+                <a href="contact.html" class="header-menu__link">Контакты</a>
+              </li>
+            </ul>
+
+            <button href="#!" class="header-nav__btn">
+              <img src="assets/ico/login.svg" alt="login" />
+            </button>
+
+            <!-- Login -->
+            <div class="login" id="login-form">
+              <h3 class="login-title">Создать личный аккаунт</h3>
+              <form class="login-form">
+                <fieldset class="login-wrapper__input">
+                  <input
+                    required
+                    type="text"
+                    placeholder="Имя"
+                    class="login-input"
+                    id="name"
+                  />
+                  <input
+                    required
+                    type="text"
+                    placeholder="Фамилия"
+                    class="login-input"
+                    id="surname"
+                  />
+                  <input
+                    required
+                    type="tel"
+                    placeholder="Номер телефона"
+                    class="login-input"
+                    id="telephon"
+                  />
+                </fieldset>
+
+                <textarea
+                  required
+                  placeholder="Ваше сообщение"
+                  class="login__text"
+                ></textarea>
+
+                <button class="login__btn" type="submit">
+                  Зарегестрироваться
+                </button>
+              </form>
+            </div>
+
+            <div class="shadow"></div>
+          </nav>
+          <!-- ./wrapper -->
+        </div>
+        <!-- ./container -->
+      </div>
+    </header>
+    <div class="page-wrap">
+      <!-- Intro -->
+      <section class="intro">
+        <div class="container">
+          <div class="intro__wrapper">
+            <div class="intro-content">
+              <h3 class="list-title">О нас:</h3>
+
+              <p class="intro__text">
+                Общественный совет по цифровому развитию республики Ингушетия -
+                организация, направленная внедрение и реализацию цифрового
+                просвещение на территории республики, за счет проведения
+                мероприятий федеральных целевых программ. Основной целью совета
+                является доведение информации о всех IT мероприятиях проходящих
+                на территории Республики Ингушетия до населения.
+              </p>
+            </div>
+
+            <div class="intro-content">
+              <h3 class="list-title">Задачи:</h3>
+
+              <ul class="intro-list">
+                <li class="intro-list__item">
+                  Организация тренингов и вебинаров для участников совета
+                </li>
+
+                <li class="intro-list__item">Освещение всех IT-мероприятий</li>
+
+                <li class="intro-list__item">
+                  Помощь в планировании мероприятий
+                </li>
+
+                <li class="intro-list__item">
+                  Коммуникация между IT-федерациями
+                </li>
+
+                <li class="intro-list__item">
+                  Коммуникация между членами совета
+                </li>
+                <li class="intro-list__item">Публикация деятельности совета</li>
+              </ul>
+            </div>
+            <!-- ./wrapper -->
+          </div>
+          <div class="intro-btn__wrapper">
+            <button class="intro-btn">Вступить</button>
+          </div>
+          <!-- ./container -->
+        </div>
+      </section>
+
+      <main class="main">
+        <!-- ing -->
+        <section class="section">
+          <div class="container">
+            <div class="ing__wrapper">
+              <div class="ing-content">
+                <h2 class="title">Республика Ингушетия</h2>
+                <p class="ing-text">
+                  Заглянем в историческое прошлое: Республика Ингушетия
+                  расположена на северных склонах предгорья Большого Кавказского
+                  хребта, в центральной его части. Ингуши – народ с древней и
+                  богатой историей. Путеводители по Ингушетии называют регион
+                  «страной парящих башен»: ведь главное культурное наследие
+                  республики — это средневековые башни, сохранившиеся высоко в
+                  горах. Одни ученые относят ее к первым векам нашей эры, другие
+                  — к 8 веку н. э
+                </p>
+              </div>
+
+              <div class="ing-cart">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.4811777852196!2d44.7828442760534!3d43.199395971127245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40506c2d2cf1b1af%3A0x8be9d3ffd501dc69!2z0JzQuNC90LjRgdGC0LXRgNGB0YLQstC-INC_0YDQvtC80YvRiNC70LXQvdC90L7RgdGC0Lgg0Lgg0YbQuNGE0YDQvtCy0L7Qs9C-INGA0LDQt9Cy0LjRgtC40Y8g0KDQtdGB0L_Rg9Cx0LvQuNC60Lgg0JjQvdCz0YPRiNC10YLQuNGP!5e0!3m2!1sru!2sru!4v1688985539566!5m2!1sru!2sru"
+                  width="600"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <!-- ./wrapper -->
+            </div>
+            <!-- ./container -->
+          </div>
+        </section>
+        <!-- Slider -->
+        <section class="section">
+          <div class="container">
+            <div class="slider__wrapper">
+              <div class="slider-track">
+                <div class="slider__item">
+                  <div class="event-img">
+                    <img src="assets/images/hackaton.jpg" alt="Мероприяти" />
+                  </div>
+
+                  <div class="event-block">
+                    <h4>Проект "Код будущего" провел второй офлайн этап"</h4>
+                    <a href="news.html" class="events-brn">Перейти</a>
+                  </div>
+                </div>
+
+                <div class="slider__item">
+                  <div class="event-img">
+                    <img src="assets/images/news2.jpg" alt="Мероприяти" />
+                  </div>
+
+                  <div class="event-block">
+                    <h4>Проект "Код будущего" провел второй офлайн этап"</h4>
+                    <a href="news.html" class="events-brn">Перейти</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__buttons">
+                <button class="slider-btn prev-btn">Назад</button>
+                <button class="slider-btn next-btn">Дальше</button>
+              </div>
+              <!-- ./wrapper -->
+            </div>
+            <!-- ./container -->
+          </div>
+        </section>
+        <!-- Banner -->
+        <section class="section">
+          <div class="container">
+            <div class="banner__wrapper">
+              <div class="banner-block">
+                <div class="banner-block__img">
+                  <img src="assets/images/photo.jpg" alt="banner img" />
+                </div>
+
+                <div class="banner-content">
+                  <a href="#!" class="banner-content__btn">Подробнее</a>
+                </div>
+              </div>
+              <!-- ./wrapper -->
+            </div>
+            <!-- ./container -->
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <p class="footer__text">
+            © Общественный совет по цифровому развитию республики Ингушетия
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Кабинет -->
+    <div class="cabinet none">
+      <div class="container">
+        <p class="user-info"></p>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

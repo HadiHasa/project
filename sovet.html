@@ -93,59 +93,77 @@
       </div>
     </header>
     <!-- Main -->
-    <main class="main">
-      <div class="container">
-        <div class="sovet">
-          <div class="sovet-block">
-            <div class="sovet__wrapper">
-              <div class="sovet-img">
-                <img src="assets/images/misha.jpg" alt="Человек" />
-              </div>
-              <div class="sovet-content">
-                <p>Михаил Владимирович Мишустин</p>
-                <p>Председатель Правительства России</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="sovet-block">
-            <div class="sovet__wrapper">
-              <div class="sovet-img">
-                <img src="assets/images/medvedev.jpg" alt="Человек" />
-              </div>
-              <div class="sovet-content">
-                <p>Медведев Дмитрий Анатольивич</p>
-                <p>Заместитель председателя Совета безопасности РФ</p>
+    <div class="page-wrap">
+      <main class="main">
+        <div class="container">
+          <div class="sovet">
+            <div class="sovet-block">
+              <div class="sovet__wrapper">
+                <div class="sovet-img">
+                  <img src="assets/images/misha.jpg" alt="Человек" />
+                </div>
+                <div class="sovet-content">
+                  <p>Михаил Владимирович Мишустин</p>
+                  <p>Председатель Правительства России</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="sovet-block">
-            <div class="sovet__wrapper">
-              <div class="sovet-img">
-                <img src="assets/images/valentin.jpg" alt="Человек" />
-              </div>
-              <div class="sovet-content">
-                <p>Матвиенко Валентина Ивановна</p>
-                <p>Председатель Совета Федерации Федерального собрания РФ</p>
+            <div class="sovet-block">
+              <div class="sovet__wrapper">
+                <div class="sovet-img">
+                  <img src="assets/images/medvedev.jpg" alt="Человек" />
+                </div>
+                <div class="sovet-content">
+                  <p>Медведев Дмитрий Анатольивич</p>
+                  <p>Заместитель председателя Совета безопасности РФ</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="sovet-block">
-            <div class="sovet__wrapper">
-              <div class="sovet-img">
-                <img src="assets/images/putin.jpg" alt="Человек" />
+            <div class="sovet-block">
+              <div class="sovet__wrapper">
+                <div class="sovet-img">
+                  <img src="assets/images/valentin.jpg" alt="Человек" />
+                </div>
+                <div class="sovet-content">
+                  <p>Матвиенко Валентина Ивановна</p>
+                  <p>Председатель Совета Федерации Федерального собрания РФ</p>
+                </div>
               </div>
-              <div class="sovet-content">
-                <p>Владимир Владимирович Путин</p>
-                <p>Президент Российской Федерации</p>
+            </div>
+
+            <div class="sovet-block">
+              <div class="sovet__wrapper">
+                <div class="sovet-img">
+                  <img src="assets/images/putin.jpg" alt="Человек" />
+                </div>
+                <div class="sovet-content">
+                  <p>Владимир Владимирович Путин</p>
+                  <p>Президент Российской Федерации</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </main>
+    </div>
+    <!-- чат бот -->
+    <button class="chatBtn">Включить бота</button>
+
+    <div class="chat none">
+      <p class="chat-text"></p>
+      <div class="btn-wrap">
+        <button class="chat-btn application">Подать заявку</button>
+        <button class="chat-btn hi">Привет!</button>
       </div>
-    </main>
+    </div>
+    <!-- Кабинет -->
+    <div class="cabinet none">
+      <div class="container">
+        <p class="user-info"></p>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -155,6 +173,7 @@
       </div>
     </footer>
     <!-- js -->
-    <script src="src/js/news.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/register.js"></script>
   </body>
 </html>

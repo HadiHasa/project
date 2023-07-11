@@ -1,4 +1,6 @@
 .news {
+  margin-bottom: 20px;
+
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -32,6 +34,14 @@
 
 .comments {
   margin-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.comment-wrapper {
+  margin-bottom: 20px;
 
   display: flex;
   flex-direction: column;

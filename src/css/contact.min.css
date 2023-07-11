@@ -288,6 +288,18 @@ p {
   color: #fff;
 }
 
+.user-info {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-info > p {
+  font-weight: 600;
+  font-size: 24px;
+}
+
 .block {
   display: block;
 }
@@ -307,4 +319,45 @@ p {
 .title {
   font-size: 26px;
   font-weight: 600;
+}
+
+.chatBtn {
+  padding: 10px 16px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.chat {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  height: 600px;
+  width: 400px;
+  background-color: rgb(237, 237, 237);
+}
+
+.btn-wrap {
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.chat-btn {
+  padding: 16px;
+  color: #fff;
+  border-radius: 40px;
+  background-color: #1b1b1b;
+}
+
+.chat-text {
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=contact.min.css.map */

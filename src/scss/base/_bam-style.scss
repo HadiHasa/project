@@ -18,3 +18,54 @@
   font-size: 26px;
   font-weight: 600;
 }
+
+// Chat
+
+.chatBtn {
+  padding: 10px 16px;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: $black;
+  color: $white;
+}
+
+.chat {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+
+  height: 600px;
+  width: 400px;
+
+  background-color: rgb(237, 237, 237);
+}
+
+.btn-wrap {
+  margin-top: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+
+.chat-btn {
+  padding: 16px;
+
+  color: $white;
+
+  border-radius: 40px;
+
+  background-color: #1b1b1b;
+}
+
+.chat-text {
+  margin-top: 220px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

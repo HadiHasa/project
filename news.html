@@ -93,40 +93,58 @@
       </div>
     </header>
     <!-- Main -->
-    <main class="main">
+    <div class="page-wrap">
+      <main class="main">
+        <div class="container">
+          <div class="news">
+            <div class="news-img">
+              <img src="assets/images/hackaton.jpg" />
+            </div>
+
+            <article class="news-block">
+              <h1 class="news-title">Финал Хакатона 2023</h1>
+
+              <p class="news-text">
+                Десятого июля 2023 года вв республике Ингушетия, в дворце спорта
+                прошел финал общероссийского проекта "Кода будущего" - Хакатон.
+                На выполнение задания участникам было выделено 7 часов.
+              </p>
+            </article>
+          </div>
+          <!-- Comments -->
+          <div class="comments">
+            <h4 class="comments-title">Комментарии</h4>
+
+            <div class="comments-form">
+              <input
+                class="comments-form__input"
+                type="text"
+                placeholder="Введите комментария"
+              />
+              <button class="comment-form__btn">Отправить</button>
+            </div>
+
+            <div class="comment-wrapper"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Кабинет -->
+    <div class="cabinet none">
       <div class="container">
-        <div class="news">
-          <div class="news-img">
-            <img src="assets/images/hackaton.jpg" />
-          </div>
-
-          <article class="news-block">
-            <h1 class="news-title">Финал Хакатона 2023</h1>
-
-            <p class="news-text">
-              Десятого июля 2023 года вв республике Ингушетия, в дворце спорта
-              прошел финал общероссийского проекта "Кода будущего" - Хакатон. На
-              выполнение задания участникам было выделено 7 часов.
-            </p>
-          </article>
-        </div>
-        <!-- Comments -->
-        <div class="comments">
-          <h4 class="comments-title">Комментарии</h4>
-
-          <div class="comments-form">
-            <input
-              class="comments-form__input"
-              type="text"
-              placeholder="Введите комментария"
-            />
-            <button class="comment-form__btn">Отпраивть</button>
-          </div>
-
-          <div class="comment-wrapper"></div>
-        </div>
+        <p class="user-info"></p>
       </div>
-    </main>
+    </div>
+    <!-- чат бот -->
+    <button class="chatBtn">Включить бота</button>
+
+    <div class="chat none">
+      <p class="chat-text"></p>
+      <div class="btn-wrap">
+        <button class="chat-btn application">Подать заявку</button>
+        <button class="chat-btn hi">Привет!</button>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -136,6 +154,8 @@
       </div>
     </footer>
     <!-- js -->
+    <script src="src/js/script.js"></script>
+    <script src="src/js/register.js"></script>
     <script src="src/js/news.js"></script>
   </body>
 </html>

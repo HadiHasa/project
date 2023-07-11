@@ -1,83 +1,85 @@
-const loginBtn = document.querySelector(".header-nav__btn");
-const introBtn = document.querySelector(".intro-btn");
-const login = document.querySelector("#login-form");
-
-loginBtn.addEventListener("click", () => {
-  login.classList.add("flex");
-  shadowBtn.classList.add("block");
-});
-
-const shadowBtn = document.querySelector(".shadow");
-
-shadowBtn.addEventListener("click", () => {
+function scriptJs() {
+  const loginBtn = document.querySelector(".header-nav__btn");
+  const introBtn = document.querySelector(".intro-btn");
   const login = document.querySelector("#login-form");
 
-  login.classList.remove("flex");
-  shadowBtn.classList.remove("block");
-});
+  loginBtn.addEventListener("click", () => {
+    login.classList.add("flex");
+    shadowBtn.classList.add("block");
+  });
+  const shadowBtn = document.querySelector(".shadow");
 
-introBtn.addEventListener("click", () => {
-  const login = document.querySelector("#login-form");
+  shadowBtn.addEventListener("click", () => {
+    const login = document.querySelector("#login-form");
 
-  login.classList.add("flex");
-  shadowBtn.classList.add("block");
-});
+    login.classList.remove("flex");
+    shadowBtn.classList.remove("block");
+  });
 
-// Slider
+  introBtn.addEventListener("click", () => {
+    const login = document.querySelector("#login-form");
 
-let position = 0;
-const sliderToShow = 1;
-const sliderToScroll = 1;
-const container = document.querySelector(".container");
-const track = document.querySelector(".slider-track");
-const items = document.querySelectorAll(".slider__item");
-const btnPrev = document.querySelector(".prev-btn");
-const btnNext = document.querySelector(".next-btn");
-let itemWidth = container.clientWidth / sliderToShow;
-const movePosition = sliderToScroll * itemWidth;
-const itemCount = items.length;
+    login.classList.add("flex");
+    shadowBtn.classList.add("block");
+  });
 
-items.forEach((item) => {
-  item.style.minWidth = `${1330}px`;
-});
+  // Slider
 
-btnNext.addEventListener("click", () => {
-  position -= movePosition;
+  let position = 0;
+  const sliderToShow = 1;
+  const sliderToScroll = 1;
+  const container = document.querySelector(".container");
+  const track = document.querySelector(".slider-track");
+  const items = document.querySelectorAll(".slider__item");
+  const btnPrev = document.querySelector(".prev-btn");
+  const btnNext = document.querySelector(".next-btn");
+  let itemWidth = container.clientWidth / sliderToShow;
+  const movePosition = sliderToScroll * itemWidth;
+  const itemCount = items.length;
 
-  setPosition();
-  checkBtn();
-});
+  items.forEach((item) => {
+    item.style.minWidth = `${1330}px`;
+  });
 
-btnPrev.addEventListener("click", () => {
-  position += movePosition;
+  btnNext.addEventListener("click", () => {
+    position -= movePosition;
 
-  setPosition();
-  checkBtn();
-});
+    setPosition();
+    checkBtn();
+  });
 
-function setPosition() {
-  track.style.transform = `translateX(${position}px)`;
+  btnPrev.addEventListener("click", () => {
+    position += movePosition;
+
+    setPosition();
+    checkBtn();
+  });
+
+  function setPosition() {
+    track.style.transform = `translateX(${position}px)`;
+  }
+
+  function checkBtn() {
+    btnPrev.disabled = position == 0;
+    btnNext.disabled = position <= -(itemCount - sliderToShow) * itemWidth;
+  }
 }
+const chat = document.querySelector(".chat");
+const chatBtn = document.querySelector(".chatBtn");
+const hiBtn = document.querySelector(".hi");
+const chatText = document.querySelector(".chat-text");
+const applicBtn = document.querySelector(".application");
 
-function checkBtn() {
-  btnPrev.disabled = position == 0;
-  btnNext.disabled = position <= -(itemCount - sliderToShow) * itemWidth;
-}
-
-// Cabinet
-
-login.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const name = document.querySelector("#name");
-  const surname = document.querySelector("#surname");
-
-  data = `${name.value} кто бы ты ни был. Извини меня что я сделал такое. ${surname.value} надеюсь тебе удобно этим пользовавться`;
-
-  document.querySelector(".user-info").innerHTML = data;
-  document.querySelector(".page-wrap").classList.add("none");
-  document.querySelector(".cabinet").classList.remove("none");
-  document.querySelector(".page-wrap").classList.add("none");
-  login.classList.remove("flex");
-  shadowBtn.classList.remove("block");
+chatBtn.addEventListener("click", () => {
+  chat.classList.toggle("none");
 });
+
+hiBtn.addEventListener("click", () => {
+  chatText.textContent = "Тебе тоже. Пж Дайте нам первое место";
+});
+
+applicBtn.addEventListener("click", () => {
+  chatText.textContent = "Сори автор лох и не реализовал это";
+});
+
+scriptJs();
